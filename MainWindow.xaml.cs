@@ -24,5 +24,19 @@ namespace CasinoSim
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            BankingWindow bankingWindow = new BankingWindow();
+            bankingWindow.Show();
+            Close();
+        }
+
+        private void BlackJack_Click(object sender, RoutedEventArgs e)
+        {
+            BlackJackWindow blackJackWindow = new BlackJackWindow();
+            blackJackWindow.Show();
+            Close();
+        }
     }
 }
