@@ -64,6 +64,7 @@
     <Compile Include="CrapsWindow.xaml.cs">
       <DependentUpon>CrapsWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Generics\Card.cs" />
     <Compile Include="PokerWindow.xaml.cs">
       <DependentUpon>PokerWindow.xaml</DependentUpon>
     </Compile>
@@ -75,6 +76,7 @@
     </Compile>
     <Compile Include="Static Classes\Banking.cs" />
     <Compile Include="Static Classes\Betting.cs" />
+    <Compile Include="Static Classes\Deck.cs" />
     <Compile Include="Static Classes\Player.cs" />
     <Page Include="Banking_Window.xaml">
       <SubType>Designer</SubType>
