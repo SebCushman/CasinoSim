@@ -7,13 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Image Source="/Assets/Overall UI/Generic Felt Mat.jpeg" Margin="-14,-11,-0.4,-14"/>
-        <Button Content="Banking" HorizontalAlignment="Left" Margin="363,63,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Button HorizontalAlignment="Left" Margin="363,112,0,0" VerticalAlignment="Top" Width="75" Click="BlackJack_Click">
-            <Image Source="/Assets/Overall UI/Blackjack Icon.png"></Image>
-        </Button>
-
-
-
+        
     </Grid>
 </Window>
