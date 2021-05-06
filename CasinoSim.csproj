@@ -58,6 +58,8 @@
     <Compile Include="BlackJackWindow.xaml.cs">
       <DependentUpon>BlackJackWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Generics\Card.cs" />
+    <Compile Include="Static Classes\Deck.cs" />
     <Compile Include="Static Classes\Player.cs" />
     <Page Include="BlackJackWindow.xaml">
       <SubType>Designer</SubType>
