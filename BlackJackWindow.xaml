@@ -8,7 +8,59 @@
         Title="BlackJackWindow" Height="450" Width="800">
     <Grid>
         <Image Source="/Assets/Overall UI/Generic Felt Mat.jpeg" />
+    <Image Source="/Assets/BlackJack/BlackJackTable.png" Margin="0,0,9.6,107" />
+
+        <Button HorizontalAlignment="Left" Margin="689,377,0,0" VerticalAlignment="Top" Width="75" Click="Back_Click">
+            <Grid>
+                <Image Source="/Assets/Overall UI/ButtonUp.png" Height="18" VerticalAlignment="Top" />
+                <TextBlock HorizontalAlignment="Center" FontFamily="/CasinoSim;component/Assets/Fonts/#ChunkFive Ex">Back</TextBlock>
+            </Grid>
+        </Button>
 
 
+        <Button HorizontalAlignment="Left" Margin="140,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000">
+            <Image Source="/Assets/Overall UI/Chip1.png" />
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="201,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000">
+         <Image Source="/Assets/Overall UI/Chip5.png" />
+   
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="262,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000"><Image Source="/Assets/Overall UI/Chip10.png" />
+
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="323,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000"><Image Source="/Assets/Overall UI/Chip20.png" />
+
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="384,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000"><Image Source="/Assets/Overall UI/Chip50.png" />
+
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="445,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000"><Image Source="/Assets/Overall UI/Chip100.png" />
+
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="506,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000"><Image Source="/Assets/Overall UI/Chip500.png" />
+
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="567,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000"><Image Source="/Assets/Overall UI/Chip1000.png" />
+
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="628,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000"><Image Source="/Assets/Overall UI/Chip5000.png" />
+
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="32,376,0,0" VerticalAlignment="Top" Width="75">
+            <Grid>
+                <Image Source="/Assets/Overall UI/ButtonUp.png" Height="18" VerticalAlignment="Top" />
+                <TextBlock HorizontalAlignment="Center" FontFamily="/CasinoSim;component/Assets/Fonts/#ChunkFive Ex">Start</TextBlock>
+            </Grid>
+        </Button>
     </Grid>
+    
+
 </Window>
