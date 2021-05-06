@@ -10,26 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace CasinoSim
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for BlackJackWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class BlackJackWindow : Window
     {
-        public MainWindow()
+        public BlackJackWindow()
         {
             InitializeComponent();
-        }
-
-        private void BlackJack_Click(object sender, RoutedEventArgs e)
-        {
-            BlackJackWindow blackJackWindow = new BlackJackWindow();
-            blackJackWindow.Show();
-            Close();
         }
     }
 }
