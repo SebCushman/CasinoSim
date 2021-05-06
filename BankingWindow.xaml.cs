@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace CasinoSim
 {
     /// <summary>
-    /// Interaction logic for BlackJackWindow.xaml
+    /// Interaction logic for BankingWindow.xaml
     /// </summary>
-    public partial class BlackJackWindow : Window
+    public partial class BankingWindow : Window
     {
-        public BlackJackWindow()
+        public BankingWindow()
         {
             InitializeComponent();
         }
@@ -30,6 +30,5 @@ namespace CasinoSim
             mainWindow.Show();
             Close();
         }
-
     }
 }

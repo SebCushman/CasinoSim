@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:CasinoSim"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="ChunkFive" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Fonts/ChunkFive.ttf #ChunkFive Ex"/>
+        </Style>
     </Application.Resources>
 </Application>

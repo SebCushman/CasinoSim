@@ -55,13 +55,36 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Banking_Window.xaml.cs">
+      <DependentUpon>Banking_Window.xaml</DependentUpon>
+    </Compile>
     <Compile Include="BlackJackWindow.xaml.cs">
       <DependentUpon>BlackJackWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Generics\Card.cs" />
-    <Compile Include="Static Classes\Deck.cs" />
+    <Compile Include="CrapsWindow.xaml.cs">
+      <DependentUpon>CrapsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PokerWindow.xaml.cs">
+      <DependentUpon>PokerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RouletteWindow.xaml.cs">
+      <DependentUpon>RouletteWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SlotsWindow.xaml.cs">
+      <DependentUpon>SlotsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Static Classes\Banking.cs" />
+    <Compile Include="Static Classes\Betting.cs" />
     <Compile Include="Static Classes\Player.cs" />
+    <Page Include="Banking_Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="BlackJackWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CrapsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -77,6 +100,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PokerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RouletteWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SlotsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

@@ -9,9 +9,35 @@
     <Grid>
         <Image Source="/Assets/Overall UI/Generic Felt Mat.jpeg" />
 
-        <Button HorizontalAlignment="Left" Margin="364,51,0,0" VerticalAlignment="Top" Width="75" Click="BlackJack_Click">
-
-            <Image Source="/Assets/Overall UI/Blackjack Icon.png" />
+        <Button HorizontalAlignment="Left" Margin="110,49,0,0" VerticalAlignment="Top" Width="75" Click="BlackJack_Click" Background="#00DDDDDD" BorderBrush="#00707070">
+          <Image Source="/Assets/Overall UI/Blackjack Icon.png" />
+  
         </Button>
+
+        <Button HorizontalAlignment="Left" Margin="251,49,0,0" VerticalAlignment="Top" Width="75" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="Craps_Click">
+            <Image Source="/Assets/Overall UI/Craps Icon.png" />
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="397,49,0,0" VerticalAlignment="Top" Width="75" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="Roulette_Click">
+            <Image Source="/Assets/Overall UI/Roulette Icon.png" />
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="559,49,0,0" VerticalAlignment="Top" Width="75" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="Poker_Click">
+            <Image Source="/Assets/Overall UI/Poker Icon.png" />
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="110,146,0,0" VerticalAlignment="Top" Width="75" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="Slots_Click">
+            <Image Source="/Assets/Overall UI/Slot Machine Icon.png" />
+
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="251,158,0,0" VerticalAlignment="Top" Width="75" Click="Banking_Click">
+            <Grid>
+                <Image Source="/Assets/Overall UI/ButtonUp.png" Height="18" VerticalAlignment="Top" />
+                <TextBlock HorizontalAlignment="Center" FontFamily="/CasinoSim;component/Assets/Fonts/#ChunkFive Ex">Banking</TextBlock>
+            </Grid>
+        </Button>
+
+
+
     </Grid>
 </Window>
