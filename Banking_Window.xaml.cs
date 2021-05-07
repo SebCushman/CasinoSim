@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using CasinoSim.Static_Classes;
 
 namespace CasinoSim
 {
@@ -22,6 +23,9 @@ namespace CasinoSim
         public Banking_Window()
         {
             InitializeComponent();
+
+            lbl_netWorth.Content = Player.netWorth;
+            lbl_wallet.Content = Player.wallet;
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
@@ -29,6 +33,26 @@ namespace CasinoSim
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             Close();
+        }
+
+        private void Withdrawl_Click(object sender, RoutedEventArgs e)
+        {
+            int dMoney = int.Parse(txtBox_withdrawl.Text);
+            Player.netWorth -= dMoney;
+            Player.wallet += dMoney;
+
+            lbl_netWorth.Content = Player.netWorth;
+            lbl_wallet.Content = Player.wallet;
+        }
+
+        private void Deposit_Click(object sender, RoutedEventArgs e)
+        {
+            int dMoney = int.Parse(txtBox_deposit.Text);
+            Player.netWorth += dMoney;
+            Player.wallet -= dMoney;
+
+            lbl_netWorth.Content = Player.netWorth;
+            lbl_wallet.Content = Player.wallet;
         }
     }
 }

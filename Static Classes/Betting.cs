@@ -10,10 +10,16 @@ namespace CasinoSim.Static_Classes
     {
         public int currentBet = 0;
 
-        public void Bet(int bet)
+        public bool Bet(int bet)
         {
-            currentBet += bet;
-            Player.wallet -= bet;
+            bool isValid = false;
+            if (Player.wallet >= bet)
+            {
+                currentBet += bet;
+                Player.wallet -= bet;
+                isValid = true;
+            }
+            return isValid;
         }
 
         public void Payout(int multiplier)
@@ -23,3 +29,10 @@ namespace CasinoSim.Static_Classes
         }
     }
 }
+
+
+//boobs
+//why? who wrote boobs? What absolute booboon? 
+//   8008135
+//poopoo doodoo kaka
+//mucha shaka baka

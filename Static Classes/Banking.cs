@@ -13,7 +13,7 @@ namespace CasinoSim.Static_Classes
             Player.netWorth += value;
             Player.wallet -= value;
         }
-
+        //this sentence is FALSE!!!!!!!
         public void Withdraw(int value)
         {
             Player.wallet += value;
@@ -21,3 +21,5 @@ namespace CasinoSim.Static_Classes
         }
     }
 }
+
+//

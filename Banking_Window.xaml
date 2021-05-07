@@ -8,12 +8,35 @@
         Title="Banking_Window" Height="450" Width="800">
     <Grid>
         <Image Source="/Assets/Overall UI/Generic Felt Mat.jpeg" />
-        <Button HorizontalAlignment="Left" Margin="685,387,0,0" VerticalAlignment="Top" Width="75" Click="Back_Click">
+        <Button HorizontalAlignment="Left" Margin="685,387,0,0" VerticalAlignment="Top" Width="75" Click="Back_Click" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="Black">
             <Grid>
                 <Image Source="/Assets/Overall UI/ButtonUp.png" Height="18" VerticalAlignment="Top" />
                 <TextBlock HorizontalAlignment="Center" FontFamily="/CasinoSim;component/Assets/Fonts/#ChunkFive Ex">Back</TextBlock>
             </Grid>
         </Button>
+
+        <Button  HorizontalAlignment="Left" Margin="260,217,0,0" VerticalAlignment="Top" Width="75" Click="Withdrawl_Click" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000">
+            <Grid>
+                <Image Source="/Assets/Overall UI/ButtonUp.png" Height="18" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,0,0,-0.4" Width="68" />
+                <TextBlock HorizontalAlignment="Center" FontFamily="/CasinoSim;component/Assets/Fonts/#ChunkFive Ex" Foreground="Black">Withdrawl</TextBlock>
+            </Grid>
+        </Button>
+        
+        <Button HorizontalAlignment="Left" Margin="453,215,0,0" VerticalAlignment="Top" Width="75" Background="#00DDDDDD" BorderBrush="#00707070" Click="Deposit_Click">
+            <Grid>
+                <Image Source="/Assets/Overall UI/ButtonUp.png" Height="18" VerticalAlignment="Top" />
+                <TextBlock HorizontalAlignment="Center" FontFamily="/CasinoSim;component/Assets/Fonts/#ChunkFive Ex" Foreground="Black">Deposit</TextBlock>
+            </Grid>
+        </Button>
+        
+        <Label x:Name="lbl_wallet" Content="Money"  HorizontalAlignment="Left" Margin="483,369,0,0" VerticalAlignment="Top" Background="White" Width="75" HorizontalContentAlignment="Center"/>
+
+        <Label x:Name="lbl_netWorth" Content="Net Worth"  HorizontalAlignment="Left" Margin="167,369,0,0" VerticalAlignment="Top" Background="White" Width="75" HorizontalContentAlignment="Center"/>
+        
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="238,189,0,0" TextWrapping="Wrap" Text="Amount to Withdrawl" VerticalAlignment="Top" Width="126" Name="txtBox_withdrawl"/>
+
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="432,189,0,0" TextWrapping="Wrap" Text="Amount to Deposit" VerticalAlignment="Top" Width="126" Name="txtBox_deposit"/>
+        
 
     </Grid>
 </Window>
