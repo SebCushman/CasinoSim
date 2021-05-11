@@ -29,10 +29,3 @@ namespace CasinoSim.Static_Classes
         }
     }
 }
-
-
-//boobs
-//why? who wrote boobs? What absolute booboon? 
-//   8008135
-//poopoo doodoo kaka
-//mucha shaka baka

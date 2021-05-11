@@ -9,7 +9,7 @@
     <Grid>
         <Image Source="/Assets/Overall UI/Generic Felt Mat.jpeg" />
         <Image Source="/Assets/Roulette/Roulette_SingleZero.png" Margin="310,0,9.6,167" />
-        <Image Source="/Assets/Roulette/RouletteWheel_SingleZero.png" Margin="21,53,462.6,10" />
+        <Image Source="/Assets/Roulette/RouletteWheel_SingleZero.png" Margin="22,10,470.6,53" />
         <Button HorizontalAlignment="Left" Margin="686,380,0,0" VerticalAlignment="Top" Width="75" Click="Back_Click">
             <Grid>
                 <Image Source="/Assets/Overall UI/ButtonUp.png" Height="18" VerticalAlignment="Top" />
@@ -17,5 +17,58 @@
             </Grid>
         </Button>
 
+        <Button HorizontalAlignment="Left" Margin="50,380,0,0" VerticalAlignment="Top" Width="75" Click="PlayRoulette">
+            <Grid>
+                <Image Source="/Assets/Overall UI/ButtonUp.png" Height="18" VerticalAlignment="Top" />
+                <TextBlock HorizontalAlignment="Center" FontFamily="/CasinoSim;component/Assets/Fonts/#ChunkFive Ex">Play</TextBlock>
+            </Grid>
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="140,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_1">
+            <Image Source="/Assets/Overall UI/Chip1.png" />
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="201,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_5">
+         <Image Source="/Assets/Overall UI/Chip5.png" />
+   
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="262,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_10"><Image Source="/Assets/Overall UI/Chip10.png" />
+
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="323,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_20"><Image Source="/Assets/Overall UI/Chip20.png" />
+
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="384,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_50"><Image Source="/Assets/Overall UI/Chip50.png" />
+
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="445,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_100"><Image Source="/Assets/Overall UI/Chip100.png" />
+
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="506,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_500"><Image Source="/Assets/Overall UI/Chip500.png" />
+
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="567,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_1000"><Image Source="/Assets/Overall UI/Chip1000.png" />
+
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="628,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_5000">
+            <Image Source="/Assets/Overall UI/Chip5000.png" />
+        </Button>
+
+        <Label x:Name="Bet" Content="Bet" HorizontalAlignment="Left" Margin="606,289,0,0" VerticalAlignment="Top" Background="#7CFFFFFF" Width="75" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lbl_Bet" Content="0" HorizontalAlignment="Left" Margin="606,320,0,0" VerticalAlignment="Top" Background="White" Width="75" HorizontalContentAlignment="Center"/>
+
+        <Label x:Name="TotalBet" Content="TotalBet" HorizontalAlignment="Left" Margin="526,289,0,0" VerticalAlignment="Top" Background="#7CFFFFFF" Width="75" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lbl_TotalBet" Content="0" HorizontalAlignment="Left" Margin="526,320,0,0" VerticalAlignment="Top" Background="White" Width="75" HorizontalContentAlignment="Center"/>
+
+        <Label x:Name="Money" Content="Wallet" HorizontalAlignment="Left" Margin="686,289,0,0" VerticalAlignment="Top" Background="#7CFFFFFF" Width="75" RenderTransformOrigin="0.265,-1.984" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lbl_Money" Content="Wallet" HorizontalAlignment="Left" Margin="686,320,0,0" VerticalAlignment="Top" Background="White" Width="75" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lbl_InvalidBet" Content="" HorizontalAlignment="Left" Margin="310,320,0,0" VerticalAlignment="Top" Background="White" Width="142"/>
     </Grid>
 </Window>
