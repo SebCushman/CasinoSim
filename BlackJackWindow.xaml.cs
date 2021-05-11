@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace CasinoSim
 {
-    /// <summary>
-    /// Interaction logic for BlackJackWindow.xaml
-    /// </summary>
     public partial class BlackJackWindow : Window
     {
         private Betting betting = new Betting();
@@ -63,7 +60,6 @@ namespace CasinoSim
             }
             lbl_Bet.Content = betting.currentBet;
             lbl_Money.Content = Player.wallet;
-            lbl_InvalidBet.Content = "";
         }
 
         private void bet_10(object sender, RoutedEventArgs e)
@@ -162,7 +158,6 @@ namespace CasinoSim
             }
             lbl_Bet.Content = betting.currentBet;
             lbl_Money.Content = Player.wallet;
-
         }
     }
 }

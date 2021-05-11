@@ -8,13 +8,96 @@
         Title="CrapsWindow" Height="450" Width="800">
     <Grid>
         <Image Source="/Assets/Overall UI/Generic Felt Mat.jpeg" />
-        <Image Source="/Assets/Craps/CrapsBoard.png" />
+        <Image Source="/Assets/Craps/CrapsBoard.png" Margin="62,26,-0.4,59" />
 
-        <Button HorizontalAlignment="Left" Margin="559,340,0,0" VerticalAlignment="Top" Width="75" Click="Back_Click">
+        <Button HorizontalAlignment="Left" Margin="44,377,0,0" VerticalAlignment="Top" Width="93" Click="Back_Click" Height="33">
             <Grid>
-                <Image Source="/Assets/Overall UI/ButtonUp.png" Height="18" VerticalAlignment="Top" />
-                <TextBlock HorizontalAlignment="Center" FontFamily="/CasinoSim;component/Assets/Fonts/#ChunkFive Ex">Back</TextBlock>
+                <Image Source="/Assets/Overall UI/ButtonUp.png" Height="33" Width="93" VerticalAlignment="Center"/>
+                <TextBlock HorizontalAlignment="Center" FontFamily="/CasinoSim;component/Assets/Fonts/#ChunkFive Ex" Margin="32,10,32.6,-10.4">Back</TextBlock>
             </Grid>
         </Button>
+
+        <Button HorizontalAlignment="Left" Margin="684,377,0,0" VerticalAlignment="Top" Width="93" Click="Roll_Click" Height="33">
+            <Grid>
+                <Image Source="/Assets/Overall UI/ButtonUp.png" Height="33" Width="93" VerticalAlignment="Center"/>
+                <TextBlock HorizontalAlignment="Center" FontFamily="/CasinoSim;component/Assets/Fonts/#ChunkFive Ex" Margin="32,10,32.6,-10.4">Roll</TextBlock>
+            </Grid>
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="37,14,0,0" VerticalAlignment="Top" Width="93" Click="Roll_Click" Height="33">
+            <Grid>
+                <Image Source="/Assets/Overall UI/ButtonUp.png" Height="33" Width="93" VerticalAlignment="Center"/>
+                <TextBlock HorizontalAlignment="Center" FontFamily="/CasinoSim;component/Assets/Fonts/#ChunkFive Ex" Margin="8,10,6.6,-10.4" Width="75">Instructions</TextBlock>
+            </Grid>
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="140,356,0,0" VerticalAlignment="Center" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_1">
+            <Image Source="/Assets/Overall UI/Chip1.png" />
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="201,356,0,0" VerticalAlignment="Center" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_5">
+            <Image Source="/Assets/Overall UI/Chip5.png" />
+
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="262,356,0,0" VerticalAlignment="Center" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_10">
+            <Image Source="/Assets/Overall UI/Chip10.png" />
+
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="323,356,0,0" VerticalAlignment="Center" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_20">
+            <Image Source="/Assets/Overall UI/Chip20.png" />
+
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="384,356,0,0" VerticalAlignment="Center" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_50">
+            <Image Source="/Assets/Overall UI/Chip50.png" />
+
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="445,356,0,0" VerticalAlignment="Center" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_100">
+            <Image Source="/Assets/Overall UI/Chip100.png" />
+
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="506,356,0,0" VerticalAlignment="Center" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_500">
+            <Image Source="/Assets/Overall UI/Chip500.png" />
+
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="567,356,0,0" VerticalAlignment="Center" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_1000">
+            <Image Source="/Assets/Overall UI/Chip1000.png" />
+
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="628,356,0,0" VerticalAlignment="Center" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_5000">
+            <Image Source="/Assets/Overall UI/Chip5000.png" />
+
+        </Button>
+        <Label Content="Chips:" HorizontalAlignment="Left" Margin="705,324,0,0" VerticalAlignment="Top" Background="#7FFFFFFF" FontFamily="/CasinoSim;component/Assets/Fonts/#ChunkFive Ex"/>
+        <Label x:Name="lbl_Chips" Content="" HorizontalAlignment="Left" Margin="705,348,0,0" VerticalAlignment="Top" Background="#7FFFFFFF" FontFamily="/CasinoSim;component/Assets/Fonts/#ChunkFive Ex" Width="46"/>
+
+        <Label Content="Bet:" HorizontalAlignment="Left" Margin="705,270,0,0" VerticalAlignment="Top" Background="#7FFFFFFF" FontFamily="/CasinoSim;component/Assets/Fonts/#ChunkFive Ex" Width="46"/>
+        <Label x:Name="lbl_Bet" Content="" HorizontalAlignment="Left" Margin="705,295,0,0" VerticalAlignment="Top" Background="#7FFFFFFF" FontFamily="/CasinoSim;component/Assets/Fonts/#ChunkFive Ex" Width="46"/>
+        <Label x:Name="lbl_InvalidBet" Content="" HorizontalAlignment="Left" Margin="566,301,0,0" VerticalAlignment="Top" Background="#7FFFFFFF" Width="113"/>
+
+        <Button x:Name="btn_dbl2" HorizontalAlignment="Left" Margin="548,47,0,0" VerticalAlignment="Top" Width="75" Height="31" Background="#7FDDDDDD" Click="btn_dbl2_Click"/>
+        <Button x:Name="btn_dbl5" HorizontalAlignment="Left" Margin="623,47,0,0" VerticalAlignment="Top" Width="75" Height="31" Background="#7FDDDDDD" Click="btn_dbl5_Click"/>
+        <Button x:Name="btn_dbl3" HorizontalAlignment="Left" Margin="548,78,0,0" VerticalAlignment="Top" Width="75" Height="31" Background="#7FDDDDDD" Click="btn_dbl3_Click"/>
+        <Button x:Name="btn_dbl1" HorizontalAlignment="Left" Margin="623,78,0,0" VerticalAlignment="Top" Width="75" Height="31" Background="#7FDDDDDD" Click="btn_dbl1_Click"/>
+        <Button x:Name="btn_SnakeEyes" HorizontalAlignment="Left" Margin="548,220,0,0" VerticalAlignment="Top" Width="58" Height="31" Background="#7FDDDDDD" Click="btn_SnakeEyes_Click"/>
+        <Button x:Name="btn_dbl6" HorizontalAlignment="Left" Margin="640,220,0,0" VerticalAlignment="Top" Width="58" Height="31" Background="#7FDDDDDD" Click="btn_dbl6_Click"/>
+        <Button x:Name="btn_1and2" HorizontalAlignment="Left" Margin="548,184,0,0" VerticalAlignment="Top" Width="58" Height="31" Background="#7FDDDDDD" Click="btn_1and2_Click"/>
+        <Button x:Name="btn_5and5_6" HorizontalAlignment="Left" Margin="640,184,0,0" VerticalAlignment="Top" Width="58" Height="31" Background="#7FDDDDDD" Click="btn_5and5_6_Click"/>
+        <Button x:Name="btn_AnyCraps" HorizontalAlignment="Left" Margin="548,256,0,0" VerticalAlignment="Top" Width="150" Height="31" Background="#7FDDDDDD" Click="btn_AnyCraps_Click"/>
+        <Button x:Name="btn_7" HorizontalAlignment="Left" Margin="548,148,0,0" VerticalAlignment="Top" Width="150" Height="31" Background="#7FDDDDDD" Click="btn_7_Click"/>
+
+        <Button x:Name="btn_2"  HorizontalAlignment="Left" Margin="177,227,0,0" VerticalAlignment="Top" Width="51" Height="56" Background="#7FDDDDDD" Click="btn_2_Click"/>
+        <Button x:Name="btn_12"  HorizontalAlignment="Left" Margin="474,226,0,0" VerticalAlignment="Top" Width="51" Height="56" Background="#7FDDDDDD" Click="btn_12_Click"/>
+        <Button x:Name="btn_3" HorizontalAlignment="Left" Margin="235,232,0,0" VerticalAlignment="Top" Width="25" Height="35" RenderTransformOrigin="0.095,0.617" Background="#7FDDDDDD" Click="btn_3_Click"/>
+        <Button x:Name="btn_4" HorizontalAlignment="Left" Margin="281,231,0,0" VerticalAlignment="Top" Width="25" Height="35" RenderTransformOrigin="0.095,0.617" Background="#7FDDDDDD" Click="btn_4_Click"/>
+        <Button x:Name="btn_9" HorizontalAlignment="Left" Margin="331,226,0,0" VerticalAlignment="Top" Width="25" Height="29" RenderTransformOrigin="0.095,0.617" Background="#7FDDDDDD" Click="btn_9_Click"/>
+        <Button x:Name="btn_10" HorizontalAlignment="Left" Margin="378,230,0,0" VerticalAlignment="Top" Width="36" Height="29" RenderTransformOrigin="0.095,0.617" Background="#7FDDDDDD" Click="btn_10_Click"/>
+        <Button x:Name="btn_11" HorizontalAlignment="Left" Margin="426,234,0,0" VerticalAlignment="Top" Width="36" Height="29" RenderTransformOrigin="0.095,0.617" Background="#7FDDDDDD" Click="btn_11_Click"/>
     </Grid>
 </Window>
