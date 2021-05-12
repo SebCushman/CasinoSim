@@ -24,7 +24,7 @@ namespace CasinoSim.Static_Classes
 
         public void Payout(int multiplier)
         {
-            Player.wallet += currentBet * multiplier;
+            Player.wallet += currentBet + (currentBet * multiplier);
             currentBet = 0;
         }
     }

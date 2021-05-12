@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CasinoSim"
         mc:Ignorable="d"
-        Title="RouletteWindow" Height="450" Width="800">
+        Title="RouletteWindow" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
-        <Image Source="/Assets/Overall UI/Generic Felt Mat.jpeg" />
-        <Image Source="/Assets/Roulette/Roulette_SingleZero.png" Margin="310,0,9.6,167" />
+        <Image Source="/Assets/Overall UI/Generic Felt Mat.jpeg" Stretch="Fill"/>
+        <Image Source="/Assets/Roulette/Roulette_SingleZero.png" Margin="317,0,5,161" />
         <Image Source="/Assets/Roulette/RouletteWheel_SingleZero.png" Margin="22,10,470.6,53" />
         <Button HorizontalAlignment="Left" Margin="686,380,0,0" VerticalAlignment="Top" Width="75" Click="Back_Click">
             <Grid>
@@ -70,5 +70,55 @@
         <Label x:Name="Money" Content="Wallet" HorizontalAlignment="Left" Margin="686,289,0,0" VerticalAlignment="Top" Background="#7CFFFFFF" Width="75" RenderTransformOrigin="0.265,-1.984" HorizontalContentAlignment="Center"/>
         <Label x:Name="lbl_Money" Content="Wallet" HorizontalAlignment="Left" Margin="686,320,0,0" VerticalAlignment="Top" Background="White" Width="75" HorizontalContentAlignment="Center"/>
         <Label x:Name="lbl_InvalidBet" Content="" HorizontalAlignment="Left" Margin="310,320,0,0" VerticalAlignment="Top" Background="White" Width="142"/>
+
+        <Button x:Name="btn_1" HorizontalAlignment="Left" Margin="370,133,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn1" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_2" HorizontalAlignment="Left" Margin="370,87,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn2" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_3" HorizontalAlignment="Left" Margin="370,42,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn3" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_4" HorizontalAlignment="Left" Margin="402,133,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn4" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_5" HorizontalAlignment="Left" Margin="402,87,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn5" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_6" HorizontalAlignment="Left" Margin="402,42,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn6" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_7" HorizontalAlignment="Left" Margin="434,133,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn7" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_8" HorizontalAlignment="Left" Margin="434,87,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn8" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_9" HorizontalAlignment="Left" Margin="434,42,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn9" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_10" HorizontalAlignment="Left" Margin="467,133,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn10" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_11" HorizontalAlignment="Left" Margin="467,87,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn11" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_12" HorizontalAlignment="Left" Margin="467,42,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn12" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_13" HorizontalAlignment="Left" Margin="500,133,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn13" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_14" HorizontalAlignment="Left" Margin="500,87,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn14" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_15" HorizontalAlignment="Left" Margin="500,42,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn15" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_16" HorizontalAlignment="Left" Margin="533,133,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn16" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_17" HorizontalAlignment="Left" Margin="533,87,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn17" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_18" HorizontalAlignment="Left" Margin="533,42,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn18" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_19" HorizontalAlignment="Left" Margin="565,133,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn19" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_20" HorizontalAlignment="Left" Margin="565,87,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn20" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_21" HorizontalAlignment="Left" Margin="565,42,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn21" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_22" HorizontalAlignment="Left" Margin="598,133,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn22" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_23" HorizontalAlignment="Left" Margin="598,87,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn23" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_24" HorizontalAlignment="Left" Margin="598,42,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn24" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_25" HorizontalAlignment="Left" Margin="631,133,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn25" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_26" HorizontalAlignment="Left" Margin="631,87,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn26" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_27" HorizontalAlignment="Left" Margin="631,42,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn27" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_28" HorizontalAlignment="Left" Margin="664,133,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn28" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_29" HorizontalAlignment="Left" Margin="664,87,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn29" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_30" HorizontalAlignment="Left" Margin="664,42,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn30" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_31" HorizontalAlignment="Left" Margin="696,133,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn31" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_32" HorizontalAlignment="Left" Margin="696,87,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn32" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_33" HorizontalAlignment="Left" Margin="696,42,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn33" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_34" HorizontalAlignment="Left" Margin="730,133,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn34" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_35" HorizontalAlignment="Left" Margin="730,87,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn35" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_36" HorizontalAlignment="Left" Margin="730,42,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn36" RenderTransformOrigin="-1.627,0.267"/>
+        <!--<Button x:Name="btn_Row1" HorizontalAlignment="Left" Margin="763,42,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btnRow1" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_Row2" HorizontalAlignment="Left" Margin="763,87,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btnRow2" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_Row3" HorizontalAlignment="Left" Margin="763,133,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btnRow3" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_Dozen1" HorizontalAlignment="Left" Margin="419,175,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btnDozen1" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_Dozen2" HorizontalAlignment="Left" Margin="549,175,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btnDozen2" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_Dozen3" HorizontalAlignment="Left" Margin="679,175,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btnDozen3" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_High" HorizontalAlignment="Left" Margin="713,209,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btnHigh" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_Odd" HorizontalAlignment="Left" Margin="647,209,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btnOdd" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_black" HorizontalAlignment="Left" Margin="583,209,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btnBlack" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_Red" HorizontalAlignment="Left" Margin="516,209,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btnRed" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_Even" HorizontalAlignment="Left" Margin="451,209,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btnEven" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_Low" HorizontalAlignment="Left" Margin="385,209,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btnLow" RenderTransformOrigin="-1.627,0.267"/>
+        <Button x:Name="btn_0" HorizontalAlignment="Left" Margin="332,87,0,0" VerticalAlignment="Top" Width="10" Height="10" Background="#7FDDDDDD" Click="btn0" RenderTransformOrigin="-1.627,0.267"/>-->
     </Grid>
 </Window>
