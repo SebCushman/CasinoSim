@@ -17,6 +17,22 @@
             </Grid>
         </Button>
 
+        <Button HorizontalAlignment="Left" Margin="3,42,0,0" VerticalAlignment="Top" Width="75" Click="Rules_Click">
+            <Grid>
+                <Image Source="/Assets/Overall UI/ButtonUp.png" Height="18" VerticalAlignment="Top" />
+                <TextBlock HorizontalAlignment="Center" FontFamily="/CasinoSim;component/Assets/Fonts/#ChunkFive Ex">Rules</TextBlock>
+            </Grid>
+        </Button>
+
+        <Popup x:Name="RulesPopup" Placement="Center" Height="300" Width="350">
+            <StackPanel Background="#d0d0d0">
+                <Button x:Name="btnRules" Content="X" Width="20" Height="20" Background="Red" Click="Rules_Exit" HorizontalAlignment="Right"/>
+                <TextBlock x:Name="RulesTxt" Background="Green" Foreground="White" Height="300">
+                </TextBlock>
+            </StackPanel>
+            
+        </Popup>
+
         <Button HorizontalAlignment="Left" Margin="50,380,0,0" VerticalAlignment="Top" Width="75" Click="PlayRoulette">
             <Grid>
                 <Image Source="/Assets/Overall UI/ButtonUp.png" Height="18" VerticalAlignment="Top" />
@@ -29,31 +45,37 @@
         </Button>
 
         <Button HorizontalAlignment="Left" Margin="201,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_5">
-         <Image Source="/Assets/Overall UI/Chip5.png" />
-   
-        </Button>
-
-        <Button HorizontalAlignment="Left" Margin="262,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_10"><Image Source="/Assets/Overall UI/Chip10.png" />
+            <Image Source="/Assets/Overall UI/Chip5.png" />
 
         </Button>
 
-        <Button HorizontalAlignment="Left" Margin="323,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_20"><Image Source="/Assets/Overall UI/Chip20.png" />
+        <Button HorizontalAlignment="Left" Margin="262,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_10">
+            <Image Source="/Assets/Overall UI/Chip10.png" />
 
         </Button>
 
-        <Button HorizontalAlignment="Left" Margin="384,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_50"><Image Source="/Assets/Overall UI/Chip50.png" />
+        <Button HorizontalAlignment="Left" Margin="323,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_20">
+            <Image Source="/Assets/Overall UI/Chip20.png" />
 
         </Button>
 
-        <Button HorizontalAlignment="Left" Margin="445,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_100"><Image Source="/Assets/Overall UI/Chip100.png" />
+        <Button HorizontalAlignment="Left" Margin="384,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_50">
+            <Image Source="/Assets/Overall UI/Chip50.png" />
 
         </Button>
 
-        <Button HorizontalAlignment="Left" Margin="506,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_500"><Image Source="/Assets/Overall UI/Chip500.png" />
+        <Button HorizontalAlignment="Left" Margin="445,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_100">
+            <Image Source="/Assets/Overall UI/Chip100.png" />
 
         </Button>
 
-        <Button HorizontalAlignment="Left" Margin="567,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_1000"><Image Source="/Assets/Overall UI/Chip1000.png" />
+        <Button HorizontalAlignment="Left" Margin="506,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_500">
+            <Image Source="/Assets/Overall UI/Chip500.png" />
+
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="567,356,0,0" VerticalAlignment="Top" Width="56" Height="40" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" Click="bet_1000">
+            <Image Source="/Assets/Overall UI/Chip1000.png" />
 
         </Button>
 

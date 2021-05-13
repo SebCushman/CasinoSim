@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -22,6 +23,7 @@ namespace CasinoSim
     {
         int totalBet = 0;
         int btnSelected = 0;
+        List<Betting> bets = new List<Betting>();
 
         // 36:1
         Betting bet1 { get; set; } = new Betting();
@@ -33,32 +35,32 @@ namespace CasinoSim
         Betting bet7 { get; set; } = new Betting();
         Betting bet8 { get; set; } = new Betting();
         Betting bet9 { get; set; } = new Betting();
-        Betting bet10 { get; set; }= new Betting();
-        Betting bet11 { get; set; }= new Betting();
-        Betting bet12 { get; set; }= new Betting();
-        Betting bet13 { get; set; }= new Betting();
-        Betting bet14 { get; set; }= new Betting();
-        Betting bet15 { get; set; }= new Betting();
-        Betting bet16 { get; set; }= new Betting();
-        Betting bet17 { get; set; }= new Betting();
-        Betting bet18 { get; set; }= new Betting();
-        Betting bet19 { get; set; }= new Betting();
-        Betting bet20 { get; set; }= new Betting();
-        Betting bet21 { get; set; }= new Betting();
-        Betting bet22 { get; set; }= new Betting();
-        Betting bet23 { get; set; }= new Betting();
-        Betting bet24 { get; set; }= new Betting();
-        Betting bet25 { get; set; }= new Betting();
-        Betting bet26 { get; set; }= new Betting();
-        Betting bet27 { get; set; }= new Betting();
-        Betting bet28 { get; set; }= new Betting();
-        Betting bet29 { get; set; }= new Betting();
-        Betting bet30 { get; set; }= new Betting();
-        Betting bet31 { get; set; }= new Betting();
-        Betting bet32 { get; set; }= new Betting();
-        Betting bet33 { get; set; }= new Betting();
-        Betting bet34 { get; set; }= new Betting();
-        Betting bet35 { get; set; }= new Betting();
+        Betting bet10 { get; set; } = new Betting();
+        Betting bet11 { get; set; } = new Betting();
+        Betting bet12 { get; set; } = new Betting();
+        Betting bet13 { get; set; } = new Betting();
+        Betting bet14 { get; set; } = new Betting();
+        Betting bet15 { get; set; } = new Betting();
+        Betting bet16 { get; set; } = new Betting();
+        Betting bet17 { get; set; } = new Betting();
+        Betting bet18 { get; set; } = new Betting();
+        Betting bet19 { get; set; } = new Betting();
+        Betting bet20 { get; set; } = new Betting();
+        Betting bet21 { get; set; } = new Betting();
+        Betting bet22 { get; set; } = new Betting();
+        Betting bet23 { get; set; } = new Betting();
+        Betting bet24 { get; set; } = new Betting();
+        Betting bet25 { get; set; } = new Betting();
+        Betting bet26 { get; set; } = new Betting();
+        Betting bet27 { get; set; } = new Betting();
+        Betting bet28 { get; set; } = new Betting();
+        Betting bet29 { get; set; } = new Betting();
+        Betting bet30 { get; set; } = new Betting();
+        Betting bet31 { get; set; } = new Betting();
+        Betting bet32 { get; set; } = new Betting();
+        Betting bet33 { get; set; } = new Betting();
+        Betting bet34 { get; set; } = new Betting();
+        Betting bet35 { get; set; } = new Betting();
         Betting bet36 { get; set; } = new Betting();
 
         // 1:1
@@ -164,6 +166,134 @@ namespace CasinoSim
         {
             InitializeComponent();
             lbl_Money.Content = Player.wallet;
+
+            bets.Add(bet1);
+            bets.Add(bet2);
+            bets.Add(bet3);
+            bets.Add(bet4);
+            bets.Add(bet5);
+            bets.Add(bet6);
+            bets.Add(bet7);
+            bets.Add(bet8);
+            bets.Add(bet9);
+            bets.Add(bet10);
+            bets.Add(bet11);
+            bets.Add(bet12);
+            bets.Add(bet13);
+            bets.Add(bet14);
+            bets.Add(bet15);
+            bets.Add(bet16);
+            bets.Add(bet17);
+            bets.Add(bet18);
+            bets.Add(bet19);
+            bets.Add(bet20);
+            bets.Add(bet21);
+            bets.Add(bet22);
+            bets.Add(bet23);
+            bets.Add(bet24);
+            bets.Add(bet25);
+            bets.Add(bet26);
+            bets.Add(bet27);
+            bets.Add(bet28);
+            bets.Add(bet29);
+            bets.Add(bet30);
+            bets.Add(bet31);
+            bets.Add(bet32);
+            bets.Add(bet33);
+            bets.Add(bet34);
+            bets.Add(bet35);
+            bets.Add(bet36);
+            bets.Add(betRed);
+            bets.Add(betBlack);
+            bets.Add(betOdd);
+            bets.Add(betEven);
+            bets.Add(betHigh);
+            bets.Add(betLow);
+            bets.Add(betDozen1);
+            bets.Add(betDozen2);
+            bets.Add(betDozen3);
+            bets.Add(betRow1);
+            bets.Add(betRow2);
+            bets.Add(betRow3);
+            bets.Add(sqr1_2_4_5);
+            bets.Add(sqr2_3_5_6);
+            bets.Add(sqr4_5_7_8);
+            bets.Add(sqr5_6_8_9);
+            bets.Add(sqr7_8_10_11);
+            bets.Add(sqr8_9_11_12);
+            bets.Add(sqr10_11_13_14);
+            bets.Add(sqr11_12_14_15);
+            bets.Add(sqr13_14_16_17);
+            bets.Add(sqr14_15_17_18);
+            bets.Add(sqr16_17_19_20);
+            bets.Add(sqr17_18_20_21);
+            bets.Add(sqr19_20_22_23);
+            bets.Add(sqr20_21_23_24);
+            bets.Add(sqr22_23_25_26);
+            bets.Add(sqr23_24_26_27);
+            bets.Add(sqr25_26_28_29);
+            bets.Add(sqr26_27_29_30);
+            bets.Add(sqr28_29_31_32);
+            bets.Add(sqr29_30_32_33);
+            bets.Add(sqr31_32_34_35);
+            bets.Add(sqr32_33_35_36);
+            bets.Add(split1_2);
+            bets.Add(split2_3);
+            bets.Add(split4_5);
+            bets.Add(split5_6);
+            bets.Add(split7_8);
+            bets.Add(split8_9);
+            bets.Add(split10_11);
+            bets.Add(split11_12);
+            bets.Add(split13_14);
+            bets.Add(split14_15);
+            bets.Add(split16_17);
+            bets.Add(split17_18);
+            bets.Add(split19_20);
+            bets.Add(split20_21);
+            bets.Add(split22_23);
+            bets.Add(split23_24);
+            bets.Add(split25_26);
+            bets.Add(split26_27);
+            bets.Add(split28_29);
+            bets.Add(split29_30);
+            bets.Add(split31_32);
+            bets.Add(split32_33);
+            bets.Add(split34_35);
+            bets.Add(split35_36);
+            bets.Add(split1_4);
+            bets.Add(split2_5);
+            bets.Add(split3_6);
+            bets.Add(split4_7);
+            bets.Add(split5_8);
+            bets.Add(split6_9);
+            bets.Add(split7_10);
+            bets.Add(split8_11);
+            bets.Add(split9_12);
+            bets.Add(split10_13);
+            bets.Add(split11_14);
+            bets.Add(split12_15);
+            bets.Add(split13_16);
+            bets.Add(split14_17);
+            bets.Add(split15_18);
+            bets.Add(split16_19);
+            bets.Add(split17_20);
+            bets.Add(split18_21);
+            bets.Add(split19_22);
+            bets.Add(split20_23);
+            bets.Add(split21_24);
+            bets.Add(split22_25);
+            bets.Add(split23_26);
+            bets.Add(split24_27);
+            bets.Add(split25_28);
+            bets.Add(split26_29);
+            bets.Add(split27_30);
+            bets.Add(split28_31);
+            bets.Add(split29_32);
+            bets.Add(split30_33);
+            bets.Add(split31_34);
+            bets.Add(split32_35);
+            bets.Add(split33_36);
         }
 
         /// <summary>
@@ -468,181 +598,278 @@ namespace CasinoSim
 
         private void bet_1(object sender, RoutedEventArgs e)
         {
-            //access currently selected button to get button's bet
-
-            //place bet in this selected button's bet
-            if (!GetButton().Bet(1))//(!btnSelected.bet.Bet(1))
+            if (GetButton().currentBet < 10000 && totalBet < 100000)
             {
-                lbl_InvalidBet.Content = "Not Enough Money";
+                //access currently selected button to get button's bet
+                //place bet in this selected button's bet
+                if (!GetButton().Bet(1))//(!btnSelected.bet.Bet(1))
+                {
+                    lbl_InvalidBet.Content = "Not Enough Money";
+                }
+                else
+                {
+                    lbl_InvalidBet.Content = "";
+                    totalBet += 1;
+                }
+                lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
+                lbl_TotalBet.Content = totalBet;
+                lbl_Money.Content = Player.wallet;
             }
-            else
+            else if (totalBet == 100000)
             {
-                lbl_InvalidBet.Content = "";
-                totalBet += 1;
+                lbl_InvalidBet.Content = "You've reached the Betting Limit";
             }
-            lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
-            lbl_TotalBet.Content = totalBet;
-            lbl_Money.Content = Player.wallet;
+            else if (GetButton().currentBet == 10000)
+            {
+                lbl_InvalidBet.Content = "Bet somewhere else";
+            }
         }
 
         private void bet_5(object sender, RoutedEventArgs e)
         {
-            //access currently selected button to get button's bet
+            if (GetButton().currentBet <= 9995 && totalBet <= 99995)
+            {
+                //access currently selected button to get button's bet
 
-            //place bet in this selected button's bet
-            if (!GetButton().Bet(5))//(!btnSelected.bet.Bet(1))
-            {
-                lbl_InvalidBet.Content = "Not Enough Money";
+                //place bet in this selected button's bet
+                if (!GetButton().Bet(5))//(!btnSelected.bet.Bet(1))
+                {
+                    lbl_InvalidBet.Content = "Not Enough Money";
+                }
+                else
+                {
+                    lbl_InvalidBet.Content = "";
+                    totalBet += 5;
+                }
+                lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
+                lbl_TotalBet.Content = totalBet;
+                lbl_Money.Content = Player.wallet;
             }
-            else
+            else if (totalBet == 100000)
             {
-                lbl_InvalidBet.Content = "";
-                totalBet += 5;
+                lbl_InvalidBet.Content = "You've reached the Betting Limit";
             }
-            lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
-            lbl_TotalBet.Content = totalBet;
-            lbl_Money.Content = Player.wallet;
+            else if (GetButton().currentBet == 10000)
+            {
+                lbl_InvalidBet.Content = "Bet somewhere else";
+            }
         }
 
         private void bet_10(object sender, RoutedEventArgs e)
         {
-            //access currently selected button to get button's bet
+            if (GetButton().currentBet <= 9990 && totalBet <= 99990)
+            {
+                //access currently selected button to get button's bet
 
-            //place bet in this selected button's bet
-            if (!GetButton().Bet(10))//(!btnSelected.bet.Bet(1))
-            {
-                lbl_InvalidBet.Content = "Not Enough Money";
+                //place bet in this selected button's bet
+                if (!GetButton().Bet(10))//(!btnSelected.bet.Bet(1))
+                {
+                    lbl_InvalidBet.Content = "Not Enough Money";
+                }
+                else
+                {
+                    lbl_InvalidBet.Content = "";
+                    totalBet += 10;
+                }
+                lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
+                lbl_TotalBet.Content = totalBet;
+                lbl_Money.Content = Player.wallet;
             }
-            else
+            else if (totalBet == 100000)
             {
-                lbl_InvalidBet.Content = "";
-                totalBet += 10;
+                lbl_InvalidBet.Content = "You've reached the Betting Limit";
             }
-            lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
-            lbl_TotalBet.Content = totalBet;
-            lbl_Money.Content = Player.wallet;
+            else if (GetButton().currentBet == 10000)
+            {
+                lbl_InvalidBet.Content = "Bet somewhere else";
+            }
         }
 
         private void bet_20(object sender, RoutedEventArgs e)
         {
-            //access currently selected button to get button's bet
+            if (GetButton().currentBet <= 9980 && totalBet <= 99980)
+            {
+                //access currently selected button to get button's bet
 
-            //place bet in this selected button's bet
-            if (!GetButton().Bet(20))//(!btnSelected.bet.Bet(1))
-            {
-                lbl_InvalidBet.Content = "Not Enough Money";
+                //place bet in this selected button's bet
+                if (!GetButton().Bet(20))//(!btnSelected.bet.Bet(1))
+                {
+                    lbl_InvalidBet.Content = "Not Enough Money";
+                }
+                else
+                {
+                    lbl_InvalidBet.Content = "";
+                    totalBet += 20;
+                }
+                lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
+                lbl_TotalBet.Content = totalBet;
+                lbl_Money.Content = Player.wallet;
             }
-            else
+            else if (totalBet == 100000)
             {
-                lbl_InvalidBet.Content = "";
-                totalBet += 20;
+                lbl_InvalidBet.Content = "You've reached the Betting Limit";
             }
-            lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
-            lbl_TotalBet.Content = totalBet;
-            lbl_Money.Content = Player.wallet;
+            else if (GetButton().currentBet == 10000)
+            {
+                lbl_InvalidBet.Content = "Bet somewhere else";
+            }
         }
 
         private void bet_50(object sender, RoutedEventArgs e)
         {
-            //access currently selected button to get button's bet
+            if (GetButton().currentBet <= 9950 && totalBet <= 99950)
+            {
+                //access currently selected button to get button's bet
 
-            //place bet in this selected button's bet
-            if (!GetButton().Bet(50))//(!btnSelected.bet.Bet(1))
-            {
-                lbl_InvalidBet.Content = "Not Enough Money";
+                //place bet in this selected button's bet
+                if (!GetButton().Bet(50))//(!btnSelected.bet.Bet(1))
+                {
+                    lbl_InvalidBet.Content = "Not Enough Money";
+                }
+                else
+                {
+                    lbl_InvalidBet.Content = "";
+                    totalBet += 50;
+                }
+                lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
+                lbl_TotalBet.Content = totalBet;
+                lbl_Money.Content = Player.wallet;
             }
-            else
+            else if (totalBet == 100000)
             {
-                lbl_InvalidBet.Content = "";
-                totalBet += 50;
+                lbl_InvalidBet.Content = "You've reached the Betting Limit";
             }
-            lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
-            lbl_TotalBet.Content = totalBet;
-            lbl_Money.Content = Player.wallet;
+            else if (GetButton().currentBet == 10000)
+            {
+                lbl_InvalidBet.Content = "Bet somewhere else";
+            }
         }
 
         private void bet_100(object sender, RoutedEventArgs e)
         {
-            //access currently selected button to get button's bet
+            if (GetButton().currentBet <= 9900 && totalBet <= 99900)
+            {
+                //access currently selected button to get button's bet
 
-            //place bet in this selected button's bet
-            if (!GetButton().Bet(100))//(!btnSelected.bet.Bet(1))
-            {
-                lbl_InvalidBet.Content = "Not Enough Money";
+                //place bet in this selected button's bet
+                if (!GetButton().Bet(100))//(!btnSelected.bet.Bet(1))
+                {
+                    lbl_InvalidBet.Content = "Not Enough Money";
+                }
+                else
+                {
+                    lbl_InvalidBet.Content = "";
+                    totalBet += 100;
+                }
+                lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
+                lbl_TotalBet.Content = totalBet;
+                lbl_Money.Content = Player.wallet;
             }
-            else
+            else if (totalBet == 100000)
             {
-                lbl_InvalidBet.Content = "";
-                totalBet += 100;
+                lbl_InvalidBet.Content = "You've reached the Betting Limit";
             }
-            lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
-            lbl_TotalBet.Content = totalBet;
-            lbl_Money.Content = Player.wallet;
+            else if (GetButton().currentBet == 10000)
+            {
+                lbl_InvalidBet.Content = "Bet somewhere else";
+            }
         }
 
         private void bet_500(object sender, RoutedEventArgs e)
         {
-            //access currently selected button to get button's bet
+            if (GetButton().currentBet <= 9500 && totalBet <= 99500)
+            {
+                //access currently selected button to get button's bet
 
-            //place bet in this selected button's bet
-            if (!GetButton().Bet(500))//(!btnSelected.bet.Bet(1))
-            {
-                lbl_InvalidBet.Content = "Not Enough Money";
+                //place bet in this selected button's bet
+                if (!GetButton().Bet(500))//(!btnSelected.bet.Bet(1))
+                {
+                    lbl_InvalidBet.Content = "Not Enough Money";
+                }
+                else
+                {
+                    lbl_InvalidBet.Content = "";
+                    totalBet += 500;
+                }
+                lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
+                lbl_TotalBet.Content = totalBet;
+                lbl_Money.Content = Player.wallet;
             }
-            else
+            else if (totalBet == 100000)
             {
-                lbl_InvalidBet.Content = "";
-                totalBet += 500;
+                lbl_InvalidBet.Content = "You've reached the Betting Limit";
             }
-            lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
-            lbl_TotalBet.Content = totalBet;
-            lbl_Money.Content = Player.wallet;
+            else if (GetButton().currentBet == 10000)
+            {
+                lbl_InvalidBet.Content = "Bet somewhere else";
+            }
         }
 
         private void bet_1000(object sender, RoutedEventArgs e)
         {
-            //access currently selected button to get button's bet
+            if (GetButton().currentBet <= 8000 && totalBet <= 98000)
+            {
+                //access currently selected button to get button's bet
 
-            //place bet in this selected button's bet
-            if (!GetButton().Bet(1000))//(!btnSelected.bet.Bet(1))
-            {
-                lbl_InvalidBet.Content = "Not Enough Money";
+                //place bet in this selected button's bet
+                if (!GetButton().Bet(1000))//(!btnSelected.bet.Bet(1))
+                {
+                    lbl_InvalidBet.Content = "Not Enough Money";
+                }
+                else
+                {
+                    lbl_InvalidBet.Content = "";
+                    totalBet += 1000;
+                }
+                lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
+                lbl_TotalBet.Content = totalBet;
+                lbl_Money.Content = Player.wallet;
             }
-            else
+            else if (totalBet == 100000)
             {
-                lbl_InvalidBet.Content = "";
-                totalBet += 1000;
+                lbl_InvalidBet.Content = "You've reached the Betting Limit";
             }
-            lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
-            lbl_TotalBet.Content = totalBet;
-            lbl_Money.Content = Player.wallet;
+            else if (GetButton().currentBet == 10000)
+            {
+                lbl_InvalidBet.Content = "Bet somewhere else";
+            }
         }
 
         private void bet_5000(object sender, RoutedEventArgs e)
         {
-            //access currently selected button to get button's bet
-
-            //place bet in this selected button's bet
-            if (!GetButton().Bet(5000))//(!btnSelected.bet.Bet(1))
+            if (GetButton().currentBet <= 5000 && totalBet <= 95000)
             {
-                lbl_InvalidBet.Content = "Not Enough Money";
-            }
-            else
-            {
-                lbl_InvalidBet.Content = "";
-                totalBet += 5000;
-            }
-            lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
-            lbl_TotalBet.Content = totalBet;
-            lbl_Money.Content = Player.wallet;
+                //access currently selected button to get button's bet
 
+                //place bet in this selected button's bet
+                if (!GetButton().Bet(5000))//(!btnSelected.bet.Bet(1))
+                {
+                    lbl_InvalidBet.Content = "Not Enough Money";
+                }
+                else
+                {
+                    lbl_InvalidBet.Content = "";
+                    totalBet += 5000;
+                }
+                lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
+                lbl_TotalBet.Content = totalBet;
+                lbl_Money.Content = Player.wallet;
+            }
+            else if (totalBet == 100000)
+            {
+                lbl_InvalidBet.Content = "You've reached the Betting Limit";
+            }
+            else if (GetButton().currentBet == 10000)
+            {
+                lbl_InvalidBet.Content = "Bet somewhere else";
+            }
         }
 
         private void PlayRoulette(object sender, RoutedEventArgs e)
         {
             Random rand = new Random();
-            //int result = rand.Next(1, 37);
-            int result = rand.Next(1, 19);
+            int result = rand.Next(1, 37);
+            //int result = rand.Next(1, 19);
 
             //Display where the ball landed (on the number == result)
 
@@ -669,6 +896,7 @@ namespace CasinoSim
                     sqr1_2_4_5.Payout(9);
                     split1_2.Payout(18);
                     split1_4.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 2:
                     bet2.Payout(36);
@@ -682,6 +910,7 @@ namespace CasinoSim
                     split1_2.Payout(18);
                     split2_3.Payout(18);
                     split2_5.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 3:
                     bet3.Payout(36);
@@ -693,6 +922,7 @@ namespace CasinoSim
                     sqr2_3_5_6.Payout(9);
                     split2_3.Payout(18);
                     split3_6.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 4:
                     bet4.Payout(36);
@@ -706,6 +936,7 @@ namespace CasinoSim
                     split1_4.Payout(18);
                     split4_5.Payout(18);
                     split4_7.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 5:
                     bet5.Payout(36);
@@ -722,6 +953,7 @@ namespace CasinoSim
                     split4_5.Payout(18);
                     split5_6.Payout(18);
                     split5_8.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 6:
                     bet6.Payout(36);
@@ -735,6 +967,7 @@ namespace CasinoSim
                     split3_6.Payout(18);
                     split5_6.Payout(18);
                     split6_9.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 7:
                     bet7.Payout(36);
@@ -748,6 +981,7 @@ namespace CasinoSim
                     split4_7.Payout(18);
                     split7_8.Payout(18);
                     split7_10.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 8:
                     bet8.Payout(36);
@@ -764,6 +998,7 @@ namespace CasinoSim
                     split7_8.Payout(18);
                     split8_9.Payout(18);
                     split8_11.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 9:
                     bet9.Payout(36);
@@ -777,6 +1012,7 @@ namespace CasinoSim
                     split6_9.Payout(18);
                     split8_9.Payout(18);
                     split9_12.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 10:
                     bet10.Payout(36);
@@ -790,6 +1026,7 @@ namespace CasinoSim
                     split7_10.Payout(18);
                     split10_11.Payout(18);
                     split10_13.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 11:
                     bet11.Payout(36);
@@ -806,6 +1043,7 @@ namespace CasinoSim
                     split10_11.Payout(18);
                     split11_12.Payout(18);
                     split11_14.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 12:
                     bet12.Payout(36);
@@ -819,6 +1057,7 @@ namespace CasinoSim
                     split9_12.Payout(18);
                     split11_12.Payout(18);
                     split12_15.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 13:
                     bet13.Payout(36);
@@ -832,6 +1071,7 @@ namespace CasinoSim
                     split10_13.Payout(18);
                     split13_14.Payout(18);
                     split13_16.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 14:
                     bet14.Payout(36);
@@ -848,6 +1088,7 @@ namespace CasinoSim
                     split13_14.Payout(18);
                     split14_15.Payout(18);
                     split14_17.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 15:
                     bet15.Payout(36);
@@ -861,6 +1102,7 @@ namespace CasinoSim
                     split12_15.Payout(18);
                     split14_15.Payout(18);
                     split15_18.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 16:
                     bet16.Payout(36);
@@ -874,6 +1116,7 @@ namespace CasinoSim
                     split13_16.Payout(18);
                     split16_17.Payout(18);
                     split16_19.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 17:
                     bet17.Payout(36);
@@ -890,6 +1133,7 @@ namespace CasinoSim
                     split16_17.Payout(18);
                     split17_18.Payout(18);
                     split17_20.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 18:
                     bet18.Payout(36);
@@ -903,6 +1147,7 @@ namespace CasinoSim
                     split15_18.Payout(18);
                     split17_18.Payout(18);
                     split18_21.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 19:
                     bet19.Payout(36);
@@ -916,6 +1161,7 @@ namespace CasinoSim
                     split16_19.Payout(18);
                     split19_20.Payout(18);
                     split19_22.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 20:
                     bet20.Payout(36);
@@ -932,6 +1178,7 @@ namespace CasinoSim
                     split19_20.Payout(18);
                     split20_21.Payout(18);
                     split20_23.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 21:
                     bet21.Payout(36);
@@ -945,6 +1192,7 @@ namespace CasinoSim
                     split18_21.Payout(18);
                     split20_21.Payout(18);
                     split21_24.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 22:
                     bet22.Payout(36);
@@ -958,6 +1206,7 @@ namespace CasinoSim
                     split19_22.Payout(18);
                     split22_23.Payout(18);
                     split22_25.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 23:
                     bet23.Payout(36);
@@ -974,6 +1223,7 @@ namespace CasinoSim
                     split22_23.Payout(18);
                     split23_24.Payout(18);
                     split23_26.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 24:
                     bet24.Payout(36);
@@ -987,6 +1237,7 @@ namespace CasinoSim
                     split21_24.Payout(18);
                     split23_24.Payout(18);
                     split24_27.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 25:
                     bet25.Payout(36);
@@ -1000,6 +1251,7 @@ namespace CasinoSim
                     split22_25.Payout(18);
                     split25_26.Payout(18);
                     split25_28.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 26:
                     bet26.Payout(36);
@@ -1016,6 +1268,7 @@ namespace CasinoSim
                     split25_26.Payout(18);
                     split26_27.Payout(18);
                     split26_29.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 27:
                     bet27.Payout(36);
@@ -1029,6 +1282,7 @@ namespace CasinoSim
                     split24_27.Payout(18);
                     split26_27.Payout(18);
                     split27_30.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 28:
                     bet28.Payout(36);
@@ -1042,6 +1296,7 @@ namespace CasinoSim
                     split25_28.Payout(18);
                     split28_29.Payout(18);
                     split28_31.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 29:
                     bet29.Payout(36);
@@ -1058,6 +1313,7 @@ namespace CasinoSim
                     split28_29.Payout(18);
                     split29_30.Payout(18);
                     split29_32.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 30:
                     bet30.Payout(36);
@@ -1071,6 +1327,7 @@ namespace CasinoSim
                     split27_30.Payout(18);
                     split29_30.Payout(18);
                     split30_33.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 31:
                     bet31.Payout(36);
@@ -1084,6 +1341,7 @@ namespace CasinoSim
                     split28_31.Payout(18);
                     split31_32.Payout(18);
                     split31_34.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 32:
                     bet32.Payout(36);
@@ -1100,6 +1358,7 @@ namespace CasinoSim
                     split31_32.Payout(18);
                     split32_33.Payout(18);
                     split32_35.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 33:
                     bet33.Payout(36);
@@ -1113,6 +1372,7 @@ namespace CasinoSim
                     split30_33.Payout(18);
                     split32_33.Payout(18);
                     split33_36.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 34:
                     bet34.Payout(36);
@@ -1124,6 +1384,7 @@ namespace CasinoSim
                     sqr31_32_34_35.Payout(9);
                     split31_34.Payout(18);
                     split34_35.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 35:
                     bet35.Payout(36);
@@ -1137,6 +1398,7 @@ namespace CasinoSim
                     split32_35.Payout(18);
                     split34_35.Payout(18);
                     split35_36.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 36:
                     bet36.Payout(36);
@@ -1148,6 +1410,7 @@ namespace CasinoSim
                     sqr32_33_35_36.Payout(9);
                     split33_36.Payout(18);
                     split35_36.Payout(18);
+                    bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 default:
                     break;
@@ -1156,7 +1419,7 @@ namespace CasinoSim
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            if(totalBet == 0)
+            if (totalBet == 0)
             {
                 MainWindow mainWindow = new MainWindow();
                 mainWindow.Show();
@@ -1166,6 +1429,32 @@ namespace CasinoSim
             {
                 lbl_InvalidBet.Content = "Cannot exit while betting";
             }
+        }
+
+        private void Rules_Click(object sender, RoutedEventArgs e)
+        {
+            //Popup rules = new Popup();
+            //rules.Width = 300;
+            //rules.Height = 300;
+            //TextBlock popupText = new TextBlock();
+            //popupText.Text = "test";
+            //popupText.Background = Brushes.Green;
+            //popupText.Foreground = Brushes.White;
+            //rules.Child = popupText;
+            //rules.IsOpen = !rules.IsOpen;
+            RulesPopup.IsOpen = true;
+            RulesTxt.Text = "Start by selecting the space you are betting on\n" +
+                "Select the chips you plan on betting\n" +
+                "You can’t place more than $10,000 on a given space\n" +
+                "You can select more places to bet\n" +
+                "You can’t bet more than $100,000 on the board\n" +
+                "Press the play button to start the roulette wheel\n" +
+                "You can’t leave the game if you have placed bets on the board";
+        }
+
+        private void Rules_Exit(object sender, RoutedEventArgs e)
+        {
+            RulesPopup.IsOpen = false;
         }
     }
 }
