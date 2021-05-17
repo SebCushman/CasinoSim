@@ -22,10 +22,11 @@ namespace CasinoSim
     public partial class RouletteWindow : Window
     {
         int totalBet = 0;
-        int btnSelected = 0;
+        int btnSelected = -1;
         List<Betting> bets = new List<Betting>();
 
         // 36:1
+        Betting bet0 { get; set; } = new Betting();
         Betting bet1 { get; set; } = new Betting();
         Betting bet2 { get; set; } = new Betting();
         Betting bet3 { get; set; } = new Betting();
@@ -167,6 +168,7 @@ namespace CasinoSim
             InitializeComponent();
             lbl_Money.Content = Player.wallet;
 
+            bets.Add(bet0);
             bets.Add(bet1);
             bets.Add(bet2);
             bets.Add(bet3);
@@ -301,6 +303,12 @@ namespace CasinoSim
         /// Might need to return the button
         /// Binding, that should make this work
         /// </summary>
+        public void btn0(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 0;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
         public void btn1(object sender, RoutedEventArgs e)
         {
             btnSelected = 1;
@@ -515,10 +523,558 @@ namespace CasinoSim
             lbl_Bet.Content = GetButton().currentBet;
         }
 
+        public void btnRed(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 37;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btnBlack(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 38;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btnOdd(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 39;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btnEven(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 40;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btnLow(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 41;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btnHigh(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 42;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btnDozen1(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 43;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btnDozen2(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 44;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btnDozen3(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 45;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btnRow1(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 46;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btnRow2(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 47;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btnRow3(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 48;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn1_2_4_5(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 49;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn2_3_5_6(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 50;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn4_5_7_8(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 51;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn5_6_8_9(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 52;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn7_8_10_11(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 53;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn8_9_11_12(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 54;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn10_11_13_14(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 55;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn11_12_14_15(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 56;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn13_14_16_17(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 57;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn14_15_17_18(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 58;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn16_17_19_20(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 59;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn17_18_20_21(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 60;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn19_20_22_23(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 61;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn20_21_23_24(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 62;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn22_23_25_26(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 63;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn23_24_26_27(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 64;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn25_26_28_29(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 65;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn26_27_29_30(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 66;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn28_29_31_32(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 67;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn29_30_32_33(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 68;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn31_32_34_35(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 69;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn32_33_35_36(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 70;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn1_2(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 71;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn2_3(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 72;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn4_5(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 73;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn5_6(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 74;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn7_8(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 75;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn8_9(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 76;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn10_11(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 77;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn11_12(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 78;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn13_14(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 79;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn14_15(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 80;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn16_17(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 81;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn17_18(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 82;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn19_20(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 83;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn20_21(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 84;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn22_23(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 85;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn23_24(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 86;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn25_26(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 87;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn26_27(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 88;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn28_29(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 89;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn29_30(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 90;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn31_32(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 91;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn32_33(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 92;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn34_35(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 93;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn35_36(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 94;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn1_4(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 95;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn2_5(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 96;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn3_6(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 97;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn4_7(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 98;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn5_8(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 99;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn6_9(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 100;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn7_10(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 101;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn8_11(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 102;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn9_12(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 103;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn10_13(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 104;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn11_14(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 105;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn12_15(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 106;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn13_16(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 107;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn14_17(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 108;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn15_18(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 109;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn16_19(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 110;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn17_20(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 111;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn18_21(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 112;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn19_22(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 113;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn20_23(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 114;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn21_24(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 115;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn22_25(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 116;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn23_26(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 117;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn24_27(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 118;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn25_28(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 119;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn26_29(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 120;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn27_30(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 121;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn28_31(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 122;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn29_32(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 123;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn30_33(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 124;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn31_34(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 125;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn32_35(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 126;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
+        public void btn33_36(object sender, RoutedEventArgs e)
+        {
+            btnSelected = 127;
+            lbl_Bet.Content = GetButton().currentBet;
+        }
+
         private Betting GetButton()
         {
             switch (btnSelected)
             {
+                case 0:
+                    return bet0;
                 case 1:
                     return bet1;
                 case 2:
@@ -591,6 +1147,188 @@ namespace CasinoSim
                     return bet35;
                 case 36:
                     return bet36;
+                case 37:
+                    return betRed;
+                case 38:
+                    return betBlack;
+                case 39:
+                    return betOdd;
+                case 40:
+                    return betEven;
+                case 41:
+                    return betLow;
+                case 42:
+                    return betHigh;
+                case 43:
+                    return betDozen1;
+                case 44:
+                    return betDozen2;
+                case 45:
+                    return betDozen3;
+                case 46:
+                    return betRow1;
+                case 47:
+                    return betRow2;
+                case 48:
+                    return betRow3;
+                case 49:
+                    return sqr1_2_4_5;
+                case 50:
+                    return sqr2_3_5_6;
+                case 51:
+                    return sqr4_5_7_8;
+                case 52:
+                    return sqr5_6_8_9;
+                case 53:
+                    return sqr7_8_10_11;
+                case 54:
+                    return sqr8_9_11_12;
+                case 55:
+                    return sqr10_11_13_14;
+                case 56:
+                    return sqr11_12_14_15;
+                case 57:
+                    return sqr13_14_16_17;
+                case 58:
+                    return sqr14_15_17_18;
+                case 59:
+                    return sqr16_17_19_20;
+                case 60:
+                    return sqr17_18_20_21;
+                case 61:
+                    return sqr19_20_22_23;
+                case 62:
+                    return sqr20_21_23_24;
+                case 63:
+                    return sqr22_23_25_26;
+                case 64:
+                    return sqr23_24_26_27;
+                case 65:
+                    return sqr25_26_28_29;
+                case 66:
+                    return sqr26_27_29_30;
+                case 67:
+                    return sqr28_29_31_32;
+                case 68:
+                    return sqr29_30_32_33;
+                case 69:
+                    return sqr31_32_34_35;
+                case 70:
+                    return sqr32_33_35_36;
+                case 71:
+                    return split1_2;
+                case 72:
+                    return split2_3;
+                case 73:
+                    return split4_5;
+                case 74:
+                    return split5_6;
+                case 75:
+                    return split7_8;
+                case 76:
+                    return split8_9;
+                case 77:
+                    return split10_11;
+                case 78:
+                    return split11_12;
+                case 79:
+                    return split13_14;
+                case 80:
+                    return split14_15;
+                case 81:
+                    return split16_17;
+                case 82:
+                    return split17_18;
+                case 83:
+                    return split19_20;
+                case 84:
+                    return split20_21;
+                case 85:
+                    return split22_23;
+                case 86:
+                    return split23_24;
+                case 87:
+                    return split25_26;
+                case 88:
+                    return split26_27;
+                case 89:
+                    return split28_29;
+                case 90:
+                    return split29_30;
+                case 91:
+                    return split31_32;
+                case 92:
+                    return split32_33;
+                case 93:
+                    return split34_35;
+                case 94:
+                    return split35_36;
+                case 95:
+                    return split1_4;
+                case 96:
+                    return split2_5;
+                case 97:
+                    return split3_6;
+                case 98:
+                    return split4_7;
+                case 99:
+                    return split5_8;
+                case 100:
+                    return split6_9;
+                case 101:
+                    return split7_10;
+                case 102:
+                    return split8_11;
+                case 103:
+                    return split9_12;
+                case 104:
+                    return split10_13;
+                case 105:
+                    return split11_14;
+                case 106:
+                    return split12_15;
+                case 107:
+                    return split13_16;
+                case 108:
+                    return split14_17;
+                case 109:
+                    return split15_18;
+                case 110:
+                    return split16_19;
+                case 111:
+                    return split17_20;
+                case 112:
+                    return split18_21;
+                case 113:
+                    return split19_22;
+                case 114:
+                    return split20_23;
+                case 115:
+                    return split21_24;
+                case 116:
+                    return split22_25;
+                case 117:
+                    return split23_26;
+                case 118:
+                    return split24_27;
+                case 119:
+                    return split25_28;
+                case 120:
+                    return split26_29;
+                case 121:
+                    return split27_30;
+                case 122:
+                    return split28_31;
+                case 123:
+                    return split29_32;
+                case 124:
+                    return split30_33;
+                case 125:
+                    return split31_34;
+                case 126:
+                    return split32_35;
+                case 127:
+                    return split33_36;
                 default:
                     return null;
             }
@@ -598,11 +1336,13 @@ namespace CasinoSim
 
         private void bet_1(object sender, RoutedEventArgs e)
         {
-            if (GetButton().currentBet < 10000 && totalBet < 100000)
+            if (btnSelected == -1)
             {
-                //access currently selected button to get button's bet
-                //place bet in this selected button's bet
-                if (!GetButton().Bet(1))//(!btnSelected.bet.Bet(1))
+                lbl_InvalidBet.Content = "Select a place to bet on";
+            }
+            else if (GetButton().currentBet < 10000 && totalBet < 200000)
+            {
+                if (!GetButton().Bet(1))
                 {
                     lbl_InvalidBet.Content = "Not Enough Money";
                 }
@@ -611,11 +1351,11 @@ namespace CasinoSim
                     lbl_InvalidBet.Content = "";
                     totalBet += 1;
                 }
-                lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
+                lbl_Bet.Content = GetButton().currentBet;
                 lbl_TotalBet.Content = totalBet;
                 lbl_Money.Content = Player.wallet;
             }
-            else if (totalBet == 100000)
+            else if (totalBet == 200000)
             {
                 lbl_InvalidBet.Content = "You've reached the Betting Limit";
             }
@@ -627,12 +1367,13 @@ namespace CasinoSim
 
         private void bet_5(object sender, RoutedEventArgs e)
         {
-            if (GetButton().currentBet <= 9995 && totalBet <= 99995)
+            if (btnSelected == -1)
             {
-                //access currently selected button to get button's bet
-
-                //place bet in this selected button's bet
-                if (!GetButton().Bet(5))//(!btnSelected.bet.Bet(1))
+                lbl_InvalidBet.Content = "Select a place to bet on";
+            }
+            else if (GetButton().currentBet <= 9995 && totalBet <= 199995)
+            {
+                if (!GetButton().Bet(5))
                 {
                     lbl_InvalidBet.Content = "Not Enough Money";
                 }
@@ -641,11 +1382,11 @@ namespace CasinoSim
                     lbl_InvalidBet.Content = "";
                     totalBet += 5;
                 }
-                lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
+                lbl_Bet.Content = GetButton().currentBet;
                 lbl_TotalBet.Content = totalBet;
                 lbl_Money.Content = Player.wallet;
             }
-            else if (totalBet == 100000)
+            else if (totalBet == 200000)
             {
                 lbl_InvalidBet.Content = "You've reached the Betting Limit";
             }
@@ -657,12 +1398,13 @@ namespace CasinoSim
 
         private void bet_10(object sender, RoutedEventArgs e)
         {
-            if (GetButton().currentBet <= 9990 && totalBet <= 99990)
+            if (btnSelected == -1)
             {
-                //access currently selected button to get button's bet
-
-                //place bet in this selected button's bet
-                if (!GetButton().Bet(10))//(!btnSelected.bet.Bet(1))
+                lbl_InvalidBet.Content = "Select a place to bet on";
+            }
+            else if (GetButton().currentBet <= 9990 && totalBet <= 199990)
+            {
+                if (!GetButton().Bet(10))
                 {
                     lbl_InvalidBet.Content = "Not Enough Money";
                 }
@@ -671,11 +1413,11 @@ namespace CasinoSim
                     lbl_InvalidBet.Content = "";
                     totalBet += 10;
                 }
-                lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
+                lbl_Bet.Content = GetButton().currentBet;
                 lbl_TotalBet.Content = totalBet;
                 lbl_Money.Content = Player.wallet;
             }
-            else if (totalBet == 100000)
+            else if (totalBet == 200000)
             {
                 lbl_InvalidBet.Content = "You've reached the Betting Limit";
             }
@@ -687,12 +1429,13 @@ namespace CasinoSim
 
         private void bet_20(object sender, RoutedEventArgs e)
         {
-            if (GetButton().currentBet <= 9980 && totalBet <= 99980)
+            if (btnSelected == -1)
             {
-                //access currently selected button to get button's bet
-
-                //place bet in this selected button's bet
-                if (!GetButton().Bet(20))//(!btnSelected.bet.Bet(1))
+                lbl_InvalidBet.Content = "Select a place to bet on";
+            }
+            else if (GetButton().currentBet <= 9980 && totalBet <= 199980)
+            {
+                if (!GetButton().Bet(20))
                 {
                     lbl_InvalidBet.Content = "Not Enough Money";
                 }
@@ -701,11 +1444,11 @@ namespace CasinoSim
                     lbl_InvalidBet.Content = "";
                     totalBet += 20;
                 }
-                lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
+                lbl_Bet.Content = GetButton().currentBet;
                 lbl_TotalBet.Content = totalBet;
                 lbl_Money.Content = Player.wallet;
             }
-            else if (totalBet == 100000)
+            else if (totalBet == 200000)
             {
                 lbl_InvalidBet.Content = "You've reached the Betting Limit";
             }
@@ -717,12 +1460,13 @@ namespace CasinoSim
 
         private void bet_50(object sender, RoutedEventArgs e)
         {
-            if (GetButton().currentBet <= 9950 && totalBet <= 99950)
+            if (btnSelected == -1)
             {
-                //access currently selected button to get button's bet
-
-                //place bet in this selected button's bet
-                if (!GetButton().Bet(50))//(!btnSelected.bet.Bet(1))
+                lbl_InvalidBet.Content = "Select a place to bet on";
+            }
+            else if (GetButton().currentBet <= 9950 && totalBet <= 199950)
+            {
+                if (!GetButton().Bet(50))
                 {
                     lbl_InvalidBet.Content = "Not Enough Money";
                 }
@@ -731,11 +1475,11 @@ namespace CasinoSim
                     lbl_InvalidBet.Content = "";
                     totalBet += 50;
                 }
-                lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
+                lbl_Bet.Content = GetButton().currentBet;
                 lbl_TotalBet.Content = totalBet;
                 lbl_Money.Content = Player.wallet;
             }
-            else if (totalBet == 100000)
+            else if (totalBet == 200000)
             {
                 lbl_InvalidBet.Content = "You've reached the Betting Limit";
             }
@@ -747,12 +1491,13 @@ namespace CasinoSim
 
         private void bet_100(object sender, RoutedEventArgs e)
         {
-            if (GetButton().currentBet <= 9900 && totalBet <= 99900)
+            if (btnSelected == -1)
             {
-                //access currently selected button to get button's bet
-
-                //place bet in this selected button's bet
-                if (!GetButton().Bet(100))//(!btnSelected.bet.Bet(1))
+                lbl_InvalidBet.Content = "Select a place to bet on";
+            }
+            else if (GetButton().currentBet <= 9900 && totalBet <= 199900)
+            {
+                if (!GetButton().Bet(100))
                 {
                     lbl_InvalidBet.Content = "Not Enough Money";
                 }
@@ -761,11 +1506,11 @@ namespace CasinoSim
                     lbl_InvalidBet.Content = "";
                     totalBet += 100;
                 }
-                lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
+                lbl_Bet.Content = GetButton().currentBet;
                 lbl_TotalBet.Content = totalBet;
                 lbl_Money.Content = Player.wallet;
             }
-            else if (totalBet == 100000)
+            else if (totalBet == 200000)
             {
                 lbl_InvalidBet.Content = "You've reached the Betting Limit";
             }
@@ -777,12 +1522,13 @@ namespace CasinoSim
 
         private void bet_500(object sender, RoutedEventArgs e)
         {
-            if (GetButton().currentBet <= 9500 && totalBet <= 99500)
+            if (btnSelected == -1)
             {
-                //access currently selected button to get button's bet
-
-                //place bet in this selected button's bet
-                if (!GetButton().Bet(500))//(!btnSelected.bet.Bet(1))
+                lbl_InvalidBet.Content = "Select a place to bet on";
+            }
+            else if (GetButton().currentBet <= 9500 && totalBet <= 199500)
+            {
+                if (!GetButton().Bet(500))
                 {
                     lbl_InvalidBet.Content = "Not Enough Money";
                 }
@@ -791,11 +1537,11 @@ namespace CasinoSim
                     lbl_InvalidBet.Content = "";
                     totalBet += 500;
                 }
-                lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
+                lbl_Bet.Content = GetButton().currentBet;
                 lbl_TotalBet.Content = totalBet;
                 lbl_Money.Content = Player.wallet;
             }
-            else if (totalBet == 100000)
+            else if (totalBet == 200000)
             {
                 lbl_InvalidBet.Content = "You've reached the Betting Limit";
             }
@@ -807,12 +1553,13 @@ namespace CasinoSim
 
         private void bet_1000(object sender, RoutedEventArgs e)
         {
-            if (GetButton().currentBet <= 8000 && totalBet <= 98000)
+            if (btnSelected == -1)
             {
-                //access currently selected button to get button's bet
-
-                //place bet in this selected button's bet
-                if (!GetButton().Bet(1000))//(!btnSelected.bet.Bet(1))
+                lbl_InvalidBet.Content = "Select a place to bet on";
+            }
+            else if (GetButton().currentBet <= 8000 && totalBet <= 198000)
+            {
+                if (!GetButton().Bet(1000))
                 {
                     lbl_InvalidBet.Content = "Not Enough Money";
                 }
@@ -821,11 +1568,11 @@ namespace CasinoSim
                     lbl_InvalidBet.Content = "";
                     totalBet += 1000;
                 }
-                lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
+                lbl_Bet.Content = GetButton().currentBet;
                 lbl_TotalBet.Content = totalBet;
                 lbl_Money.Content = Player.wallet;
             }
-            else if (totalBet == 100000)
+            else if (totalBet == 200000)
             {
                 lbl_InvalidBet.Content = "You've reached the Betting Limit";
             }
@@ -837,12 +1584,13 @@ namespace CasinoSim
 
         private void bet_5000(object sender, RoutedEventArgs e)
         {
-            if (GetButton().currentBet <= 5000 && totalBet <= 95000)
+            if (btnSelected == -1)
             {
-                //access currently selected button to get button's bet
-
-                //place bet in this selected button's bet
-                if (!GetButton().Bet(5000))//(!btnSelected.bet.Bet(1))
+                lbl_InvalidBet.Content = "Select a place to bet on";
+            }
+            else if (GetButton().currentBet <= 5000 && totalBet <= 195000)
+            {
+                if (!GetButton().Bet(5000))
                 {
                     lbl_InvalidBet.Content = "Not Enough Money";
                 }
@@ -851,11 +1599,11 @@ namespace CasinoSim
                     lbl_InvalidBet.Content = "";
                     totalBet += 5000;
                 }
-                lbl_Bet.Content = GetButton().currentBet;//btnSelected.bet.currentBet;
+                lbl_Bet.Content = GetButton().currentBet;
                 lbl_TotalBet.Content = totalBet;
                 lbl_Money.Content = Player.wallet;
             }
-            else if (totalBet == 100000)
+            else if (totalBet == 200000)
             {
                 lbl_InvalidBet.Content = "You've reached the Betting Limit";
             }
@@ -868,15 +1616,15 @@ namespace CasinoSim
         private void PlayRoulette(object sender, RoutedEventArgs e)
         {
             Random rand = new Random();
-            int result = rand.Next(1, 37);
-            //int result = rand.Next(1, 19);
+            int result = rand.Next(0, 37);
 
             //Display where the ball landed (on the number == result)
+            lbl_Result.Content = $"Last result: {result}";
 
-            //PayoutRoulette(result);
-            PayoutRoulette(1);
+            PayoutRoulette(result);
+            //PayoutRoulette(23);
 
-            lbl_Bet.Content = bet1.currentBet;//btnSelected.bet.currentBet;
+            lbl_Bet.Content = bet1.currentBet;
             totalBet = 0;
             lbl_TotalBet.Content = totalBet;
             lbl_Money.Content = Player.wallet;
@@ -886,6 +1634,9 @@ namespace CasinoSim
         {
             switch (result)
             {
+                case 0:
+                    bet0.Payout(40);
+                    break;
                 case 1:
                     bet1.Payout(36);
                     betRed.Payout(1);
@@ -1209,6 +1960,10 @@ namespace CasinoSim
                     bets.ForEach(bet => bet.currentBet = 0);
                     break;
                 case 23:
+                    if(bet23.currentBet != 0 && betRed.currentBet != 0 && betHigh.currentBet != 0 && betDozen2.currentBet != 0 && betRow2.currentBet != 0 && sqr19_20_22_23.currentBet != 0 && sqr20_21_23_24.currentBet != 0 && sqr22_23_25_26.currentBet != 0 && sqr23_24_26_27.currentBet != 0 && split20_23.currentBet != 0 && split22_23.currentBet != 0 && split23_24.currentBet != 0 && split23_26.currentBet != 0)
+                    {
+                        //insert the clip/audio of Arin screaming for winning the Fortress on 23
+                    }
                     bet23.Payout(36);
                     betRed.Payout(1);
                     betOdd.Payout(1);
@@ -1433,21 +2188,12 @@ namespace CasinoSim
 
         private void Rules_Click(object sender, RoutedEventArgs e)
         {
-            //Popup rules = new Popup();
-            //rules.Width = 300;
-            //rules.Height = 300;
-            //TextBlock popupText = new TextBlock();
-            //popupText.Text = "test";
-            //popupText.Background = Brushes.Green;
-            //popupText.Foreground = Brushes.White;
-            //rules.Child = popupText;
-            //rules.IsOpen = !rules.IsOpen;
             RulesPopup.IsOpen = true;
             RulesTxt.Text = "Start by selecting the space you are betting on\n" +
                 "Select the chips you plan on betting\n" +
                 "You can’t place more than $10,000 on a given space\n" +
                 "You can select more places to bet\n" +
-                "You can’t bet more than $100,000 on the board\n" +
+                "You can’t bet more than $200,000 on the board\n" +
                 "Press the play button to start the roulette wheel\n" +
                 "You can’t leave the game if you have placed bets on the board";
         }

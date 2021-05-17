@@ -18,7 +18,7 @@
         <Button  HorizontalAlignment="Left" Margin="260,217,0,0" VerticalAlignment="Top" Width="75" Click="Withdrawl_Click" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000">
             <Grid>
                 <Image Source="/Assets/Overall UI/ButtonUp.png" Height="18" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,0,0,-0.4" Width="68" />
-                <TextBlock HorizontalAlignment="Center" FontFamily="/CasinoSim;component/Assets/Fonts/#ChunkFive Ex" Foreground="Black">Withdrawl</TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontFamily="/CasinoSim;component/Assets/Fonts/#ChunkFive Ex" Foreground="Black">Withdraw</TextBlock>
             </Grid>
         </Button>
         
@@ -35,9 +35,9 @@
         <Label x:Name="lbl_netWorth" Content="Net Worth"  HorizontalAlignment="Left" Margin="167,369,0,0" VerticalAlignment="Top" Background="White" Width="75" HorizontalContentAlignment="Center"/>
         <Label x:Name="NetWorth" Content="Net Worth" HorizontalAlignment="Left" Margin="167,338,0,0" VerticalAlignment="Top" Background="#7CFFFFFF" Width="75" RenderTransformOrigin="0.265,-1.984" HorizontalContentAlignment="Center"/>
         
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="238,189,0,0" TextWrapping="Wrap" Text="Amount to Withdrawl" VerticalAlignment="Top" Width="126" Name="txtBox_withdrawl"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="238,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" Name="txtBox_withdrawl"/>
 
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="432,189,0,0" TextWrapping="Wrap" Text="Amount to Deposit" VerticalAlignment="Top" Width="126" Name="txtBox_deposit"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="432,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" Name="txtBox_deposit"/>
         
 
     </Grid>
